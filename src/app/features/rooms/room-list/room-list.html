@@ -1,0 +1,22 @@
+<div class="mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Search rooms..."
+    [(ngModel)]="filterText"
+    (ngModelChange)="applyFilter()"
+  />
+</div>
+
+<div class="row">
+  <div class="col-md-4" *ngFor="let room of filteredRooms">
+    <app-room-card [room]="room" (book)="openBooking($event)"></app-room-card>
+  </div>
+</div>
+
+<!-- Booking Modal -->
+<app-book-modal 
+  *ngIf="selectedRoom" 
+  [room]="selectedRoom" 
+  (close)="closeBooking()">
+</app-book-modal>
