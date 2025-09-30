@@ -28,19 +28,19 @@ This project was developed as part of a technical assessment.
 
 📐 Design Decisions
 
-Standalone Components (Angular 17 best practice)
+1. Standalone Components (Angular 17 best practice)
 No need for NgModule, keeps structure clean.
 
-Reactive Forms for Booking
+2. Reactive Forms for Booking
 More scalable and testable than template-driven forms.
 
-Toast Notifications
+3. Toast Notifications
 Replaces alert() with a better UX for confirmations.
 
-Room Service with BehaviorSubject
+4. Room Service with BehaviorSubject
 State management with localStorage persistence.
 
-Bootstrap Grid System
+5. Bootstrap Grid System
 Ensures responsiveness without extra CSS frameworks.
 
 ---
